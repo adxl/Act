@@ -1,4 +1,4 @@
-export default {
+const Act = {
 
   // Act.Component
   Component: class {
@@ -7,4 +7,15 @@ export default {
     }
   },
 
+  // Act.createElement
+  createElement: (type, props, children) => {
+    // TODO: check PropTypes if component and params types
+
+    const element = { type, props, children };
+
+    return element;
+  },
+
 };
+
+export default Act;
