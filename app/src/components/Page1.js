@@ -22,7 +22,9 @@ export default class Page1 extends Act.Component {
       Act.createElement(Button, {
         handleClick: this.changeLabelValue,
       }),
-      Act.createElement(Label, { content: this.state.labelValue }),
+      Act.createElement(Label, {
+        content: this.state.labelValue,
+      }),
       Link('/', {}, 'Accueil'),
     ]);
   }
