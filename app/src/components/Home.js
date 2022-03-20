@@ -8,10 +8,13 @@ export default class Home extends Act.Component {
       Act.createElement('p', {}, ['Menu :']),
       Act.createElement('ul', {}, [
         Act.createElement('li', {}, [
-          Link('/page1', {}, 'Page une'),
+          Link('/page1', {}, 'Page 1'),
         ]),
         Act.createElement('li', {}, [
-          Link('/page2', {}, 'Page deux'),
+          Link('/page2', {}, 'Page 2'),
+        ]),
+        Act.createElement('li', {}, [
+          Link('/page3', {}, "Page 3 (n'existe pas !)"),
         ]),
       ]),
     ]);
