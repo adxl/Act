@@ -8,12 +8,15 @@ export default class Page1 extends Act.Component {
   constructor(props) {
     super(props);
     this.state = {
-      labelValue: 0,
+      content: {
+        value: 1,
+        color: 'red',
+      },
     };
   }
 
-  changeLabelValue = (labelValue) => {
-    this.setState({ labelValue });
+  changeLabelValue = (value) => {
+    this.setState({ content: { value } });
   };
 
   render() {
@@ -22,7 +25,9 @@ export default class Page1 extends Act.Component {
       Act.createElement(Button, {
         handleClick: this.changeLabelValue,
       }),
-      Act.createElement(Label, { content: this.state.labelValue }),
+      Act.createElement(Label, {
+        content: this.state.content,
+      }),
       Link('/', {}, 'Accueil'),
     ]);
   }
