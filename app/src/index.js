@@ -3,4 +3,4 @@ import ActDOM from '/lib/act-dom.js';
 
 import App from './components/App.js';
 
-ActDOM.render(App(), document.getElementById('root'));
+ActDOM.render(Act.createElement(App), document.getElementById('root'));
