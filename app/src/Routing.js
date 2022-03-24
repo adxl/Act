@@ -1,13 +1,13 @@
 import Act from '/lib/act.js';
 import Router from '/lib/act-router.js';
 
-import Home from './Home.js';
-import Page1 from './Page1.js';
-import Page2 from './Page2.js';
+import Home from './pages/Home.js';
+import Page1 from './pages/Page1.js';
+import Page2 from './pages/Page2.js';
 
-import Error from './Error.js';
+import Error from './pages/Error.js';
 
-export default class App extends Act.Component {
+export default class Routing extends Act.Component {
   render() {
     return Router([
       {
