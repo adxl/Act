@@ -3,7 +3,7 @@ import Act from '/lib/act.js';
 import Button from '../components/Button.js';
 import Label from '../components/Label.js';
 
-export default class Page1 extends Act.Component {
+export default class Randomizer extends Act.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -15,6 +15,10 @@ export default class Page1 extends Act.Component {
     };
   }
 
+  componentDidMount() {
+    console.info('The randomizer component has been mounted successfully !');
+  }
+
   changeLabelValue = (value) => {
     this.setState({ content: { value } });
   };
@@ -23,14 +27,14 @@ export default class Page1 extends Act.Component {
     if (!this.state.isFullScreen) {
       document.documentElement.requestFullscreen()
         .then(() => {
-          console.log('Fullscreen: ON');
+          console.debug('Fullscreen: ON');
           this.setState({ ...this.state, isFullScreen: true });
         });
     } else {
       document.exitFullscreen().then(() => {
-        console.log('Fullscreen: OFF');
+        console.debug('Fullscreen: OFF');
       }).catch(() => {
-        console.log('Cheater!');
+        console.error('Cheater!');
       }).finally(() => {
         this.setState({ ...this.state, isFullScreen: false });
       });

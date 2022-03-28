@@ -2,7 +2,7 @@ import Act from '/lib/act.js';
 import Router from '/lib/act-router.js';
 
 import Home from './pages/Home.js';
-import Page1 from './pages/Page1.js';
+import Randomizer from './pages/Randomizer.js';
 import Page2 from './pages/Page2.js';
 
 import Error from './pages/Error.js';
@@ -16,7 +16,7 @@ export default class Routing extends Act.Component {
       },
       {
         path: '/page1',
-        component: Act.createElement(Page1),
+        component: Act.createElement(Randomizer),
       },
       {
         path: '/page2',

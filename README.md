@@ -24,4 +24,4 @@
 - [x] Fetch API
 - [x] Geo-localization API
 - [x] Fullscreen API
-- [ ] \<Some Web API\>
+- [ ] Storage API
