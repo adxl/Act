@@ -17,11 +17,11 @@
 - [x] routing
 - [x] promises
 - [x] proptypes validation
-- [ ] API fetching
+- [x] API fetching
 
 ### Bonus
 
 - [x] Fetch API
 - [x] Geo-localization API
 - [x] Fullscreen API
-- [ ] Storage API
+- [x] Storage API
