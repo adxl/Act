@@ -6,3 +6,7 @@ body {
 a {
     color: white;
 }
+
+.card p {
+    text-align: justify !important;
+}

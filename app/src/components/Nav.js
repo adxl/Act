@@ -14,7 +14,7 @@ class Nav extends Act.Component {
           Act.createElement('div', { class: 'navbar-nav' }, [
             Link('/', { class: 'nav-link' }, 'Home'),
             Link('/page1', { class: 'nav-link' }, 'Randomizer'),
-            Link('/page2', { class: 'nav-link' }, 'Fetcher'),
+            Link('/fetch', { class: 'nav-link' }, 'Fetcher'),
             Link('/animal', { class: 'nav-link' }, 'Animal '),
             Link('/404', { class: 'nav-link' }, 'Void 💀'),
           ]),
