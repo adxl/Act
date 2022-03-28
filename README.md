@@ -9,8 +9,8 @@
 ### Features:
 
 - [x] native objects prototypes
-- [ ] prop_access
-- [ ] String interpolate
+- [x] prop_access
+- [x] String interpolate
 - [x] objects creation
 - [x] class inheritance
 - [x] modules
