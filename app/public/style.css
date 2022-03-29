@@ -1,0 +1,19 @@
+body {
+    background-color: #121718;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.card p {
+    text-align: justify !important;
+}
+
+.label {
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    display: inline-block;
+    width: auto;
+}
