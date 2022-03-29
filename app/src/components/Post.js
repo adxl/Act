@@ -3,11 +3,13 @@ import PropTypes from '/lib/prop-types.js';
 
 class Post extends Act.Component {
   render() {
-    return Act.createElement('div', { class: "col-3" }, [
-      Act.createElement('div', { class: "card text-dark p-4" }, [
-        Act.createElement('h3', { class: 'text-start text-uppercase' }, [this.props.content.title]),
-        Act.createElement('p', {}, [this.props.content.body]),
-      ])
+    return Act.createElement('div', { class: 'col-3' }, [
+      Act.createElement('div', { class: 'card text-dark' }, [
+        Act.createElement('div', { class: 'card-body' }, [
+          Act.createElement('h5', { class: 'card-title text-start' }, [this.props.content.title]),
+          Act.createElement('p', { class: 'card-text' }, [this.props.content.body]),
+        ]),
+      ]),
     ]);
   }
 }
@@ -15,7 +17,7 @@ class Post extends Act.Component {
 Post.propTypes = {
   content: PropTypes.structure({
     title: PropTypes.string,
-    body: PropTypes.string
+    body: PropTypes.string,
   }),
 };
 

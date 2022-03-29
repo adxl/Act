@@ -43,14 +43,19 @@ export default class Randomizer extends Act.Component {
 
   render() {
     return Act.createElement('div', {
-      class: 'text-center',
+      class: 'd-flex flex-column align-items-center',
     }, [
-      Act.createElement('h1', { class: 'text-uppercase' }, ['The Randomizer']),
-      Act.createElement(Button, {
-        handleClick: this.changeLabelValue,
-        color: 'info',
-        label: 'Randomize!',
-      }),
+      Act.createElement('h1', { class: 'text-capitalize mb-5' }, ['The Randomizer']),
+      Act.createElement('p', { class: 'mb-3' }, [
+        'Cliquer sur le bouton pour générer un nombre aléatoire',
+      ]),
+      Act.createElement('div', { class: 'mb-4' }, [
+        Act.createElement(Button, {
+          handleClick: this.changeLabelValue,
+          color: 'info',
+          label: 'Randomize!',
+        }),
+      ]),
       Act.createElement(Label, {
         content: this.state.content,
       }),

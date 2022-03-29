@@ -3,8 +3,8 @@ import Router from '/lib/act-router.js';
 
 import Home from './pages/Home.js';
 import Randomizer from './pages/Randomizer.js';
-import Fetcher from './pages/Fetcher.js';
-import Animal from './pages/Animal.js';
+import Posts from './pages/Posts.js';
+import Zoo from './pages/Zoo.js';
 
 import Error from './pages/Error.js';
 
@@ -16,16 +16,16 @@ export default class Routing extends Act.Component {
         component: Act.createElement(Home),
       },
       {
-        path: '/page1',
+        path: '/randomizer',
         component: Act.createElement(Randomizer),
       },
       {
-        path: '/fetch',
-        component: Act.createElement(Fetcher),
+        path: '/posts',
+        component: Act.createElement(Posts),
       },
       {
-        path: '/animal',
-        component: Act.createElement(Animal),
+        path: '/zoo',
+        component: Act.createElement(Zoo),
       },
     ], Act.createElement(Error));
   }

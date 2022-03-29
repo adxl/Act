@@ -3,8 +3,8 @@ import PropTypes from '/lib/prop-types.js';
 
 class Label extends Act.Component {
   render() {
-    return Act.createElement('p', {
-      class: 'my-3',
+    return Act.createElement('h2', {
+      class: 'my-3 label',
     }, [this.props.content.value]);
   }
 }

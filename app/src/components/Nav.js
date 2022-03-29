@@ -9,13 +9,12 @@ class Nav extends Act.Component {
       Act.createElement('div', {
         class: 'container-fluid',
       }, [
-        Act.createElement('a', { class: 'navbar-brand' }, ['Logo']),
+        Link('/', { class: 'navbar-brand' }, 'Accueil'),
         Act.createElement('div', {}, [
           Act.createElement('div', { class: 'navbar-nav' }, [
-            Link('/', { class: 'nav-link' }, 'Home'),
-            Link('/page1', { class: 'nav-link' }, 'Randomizer'),
-            Link('/fetch', { class: 'nav-link' }, 'Fetcher'),
-            Link('/animal', { class: 'nav-link' }, 'Animal '),
+            Link('/randomizer', { class: 'nav-link' }, 'Randomizer'),
+            Link('/posts', { class: 'nav-link' }, 'Posts'),
+            Link('/zoo', { class: 'nav-link' }, 'Le Zoo'),
             Link('/404', { class: 'nav-link' }, 'Void 💀'),
           ]),
         ]),
